@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/dialog_holo_dark_frame"
+    android:backgroundTint="#121212"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/widget_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Living Room Fan"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/widget_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_device_name"
+        android:text="OFF"
+        android:textColor="#A8A8A8"
+        android:textSize="11sp" />
+
+    <ImageButton
+        android:id="@+id/widget_toggle_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:src="@android:drawable/ic_lock_power_off"
+        android:tint="#FFD700"
+        android:scaleType="fitCenter"
+        android:padding="10dp" />
+</RelativeLayout>

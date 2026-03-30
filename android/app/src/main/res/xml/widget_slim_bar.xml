@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:drawable/dialog_holo_dark_frame"
+    android:backgroundTint="#121212"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="15dp">
+
+    <TextView
+        android:id="@+id/widget_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Light"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="ON"
+        android:textColor="#FFD700"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/widget_toggle_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="#00000000"
+        android:src="@android:drawable/ic_menu_revert"
+        android:tint="#FFFFFF"
+        android:scaleType="fitCenter" />
+</LinearLayout>
